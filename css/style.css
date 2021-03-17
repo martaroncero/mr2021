@@ -359,7 +359,7 @@ footer nav a {
   }
 
   .menu {
-    width: 80%;
+    width: 90%;
   }
 
   .menu .pages,
@@ -371,6 +371,7 @@ footer nav a {
    .menu .pages,
   .menu .social a {
     margin-left: 0;
+    top: 30%;
   }
 
   section {
