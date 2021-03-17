@@ -358,8 +358,8 @@ footer nav a {
     padding-right: 10px;
   }
 
-  .menu.open{
-    width: 100%;
+  .menu {
+    width: 80%;
   }
 
   .menu .pages,
