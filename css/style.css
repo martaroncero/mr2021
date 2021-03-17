@@ -376,7 +376,7 @@ footer nav a {
   section {
     padding: 40px 40px 60px;
     margin-bottom: 0;
-    height: 100%;
+
 
   }
 
@@ -423,6 +423,10 @@ footer nav a {
   .section_3 h2 {
     font-size: 60px;
   }
+
+  .section_1 p {
+  padding-top: 10px;
+}
 
   .section_2 {
     flex-direction: column;
