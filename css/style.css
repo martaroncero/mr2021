@@ -1,11 +1,9 @@
-
 body {
   background-color: #ecc7ab;
   color: #ffffff;
   font-family: 'Work Sans';
   font-size: 24px;
   line-height: 1.25;
-   transition: background-color 1s;
 }
 
 header {
@@ -38,7 +36,7 @@ header .eye-icon {
 }
 
 .menu {
-  background-color: #ffd363;
+  background-color: #000;
   color: #fff;
   height: 100%;
   position: fixed;
@@ -48,6 +46,7 @@ header .eye-icon {
   transition: transform 0.5s ease;
   width: 700px;
   z-index: 2;
+  text-align: left;
 }
 
 .menu.open {
@@ -55,45 +54,55 @@ header .eye-icon {
 }
 
 .menu .pages {
+  left: 45px;
   position: absolute;
+  max-width: 300px;
   top: 50%;
-  text-align: left;
   transform: translateY(-50%);
-    width: 200px;
+  line-height: 25px;
 }
 
+.menu .pages h3 {
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  line-height: 0.9;
+  margin-bottom: 5px;
+
+  text-decoration: none;
+}
 .menu .pages p {
-   font-size: 14px;
-  margin: 0;
-  line-height: 18px;
+  color: #fff;
+  display: block;
+  font-size: 17px;
+
+  margin-bottom: 5px;
+  padding-top: 30px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .menu .pages a:hover {
   color: #1a77bb;
 }
 
-.menu .social i{
-  width: 5px;
-  margin-right: 30px;
-  padding-top: 20px;
-    text-decoration: none;
+.menu .social {
+  bottom: 30px;
+  position: absolute;
+  left: 45px;
+  display: flex;
 
-}
-
-.menu .social i:hover{
-  width: 5px;
-  margin-right: 30px;
-  padding-top: 20px;
 
 }
 
 .menu .social a {
   border-bottom: 2px solid transparent;
   color: #fff;
-  font-size: 24px;
-/*  display: block;
-*/  text-align: right;
-
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+    margin-left: 10px;
 }
 
 .menu .social a:hover {
@@ -148,6 +157,11 @@ section {
 .section_1 .square {
   bottom: -30px;
   left: 25%;
+}
+
+
+.section_1 img{
+  width: 50%;
 }
 
 .section_1 img,
@@ -336,7 +350,13 @@ footer nav a {
 
   .menu .pages,
   .menu .social {
+    text-align: left;
     right: 40px;
+    display: block;
+  }
+   .menu .pages,
+  .menu .social a {
+    margin-left: 0;
   }
 
   section {
