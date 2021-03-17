@@ -358,7 +358,7 @@ footer nav a {
     padding-right: 10px;
   }
 
-  .menu {
+  .menu.open{
     width: 100%;
   }
 
@@ -376,7 +376,7 @@ footer nav a {
   section {
     padding: 40px 40px 60px;
     margin-bottom: 0;
-
+    height: 100%;
 
   }
 
