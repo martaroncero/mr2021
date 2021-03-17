@@ -1,9 +1,12 @@
 body {
-  background-color: #ecc7ab;
-  color: #ffffff;
+  background-color: #ffff;
+  color: #000;
   font-family: 'Work Sans';
   font-size: 24px;
   line-height: 1.25;
+
+  transition: background-color 1s;
+
 }
 
 header {
@@ -11,16 +14,18 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 header nav a {
-  /* color: #ffffff; */
+   color: #C7B1D8;
   font-weight: 500;
   padding-right: 15px;
   text-decoration: none;
   text-transform: uppercase;
+
+  mix-blend-mode: difference;
 }
 
 header nav img {
@@ -37,14 +42,14 @@ header .eye-icon {
 
 .menu {
   background-color: #000;
-  color: #fff;
+  color: #C7B1D8;
   height: 100%;
   position: fixed;
   right: 0;
   top: 0;
   transform: translateX(100%);
   transition: transform 0.5s ease;
-  width: 700px;
+  width: 50%;
   z-index: 2;
   text-align: left;
 }
@@ -115,6 +120,7 @@ section {
   position: relative;
   margin: 0 auto 200px;
   max-width: 960px;
+  height: 100vh;
 }
 
 .circle,
@@ -125,18 +131,18 @@ section {
 }
 
 .circle {
-  background-color: #ffd363;
+  background-color: #000;
   border-radius: 50%;
 }
 
 .square {
-  background-color: #738da0;
+  background-color: #7777;
 }
 
 .copy {
   max-width: 620px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
 }
 
@@ -145,8 +151,12 @@ section {
   line-height: 0.9;
 }
 
+.section_1 p {
+  padding-top: 20px;
+}
+
 .section_1 .copy {
-  right: 20px;
+  right: -200px;
 }
 
 .section_1 .circle {
@@ -161,7 +171,7 @@ section {
 
 
 .section_1 img{
-  width: 50%;
+  width: 75%;
 }
 
 .section_1 img,
@@ -169,13 +179,17 @@ section {
   transition: transform 0.5s ease;
 }
 
-.section_1:hover img {
-  transform: rotate(-10deg);
+.section_1 p {
+  font-size: 24px;
+  max-width: 360px;
 }
 
-.section_1:hover h2 {
-  transform: scale(1.15);
+.section_1:hover img {
+  transform: scale(0.8) rotate(5deg);
+  opacity: 0.75;
 }
+
+
 
 .section_2 {
   display: flex;
@@ -362,6 +376,8 @@ footer nav a {
   section {
     padding: 40px 40px 60px;
     margin-bottom: 0;
+    height: 100%;
+
   }
 
   .copy {
