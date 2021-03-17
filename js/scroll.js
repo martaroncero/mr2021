@@ -13,13 +13,13 @@ $(document).on("scroll", function () {
   if (pixels < 600) {
     $("body").css("background-color", "#ffffff")
   } else if (pixels < 1400) {
-    $("body").css("background-color", "#1e555c")
+    $("body").css("background-color", "#000")
   } else if (pixels < 2200) {
-    $("body").css("background-color", "#d9dfe4")
+    $("body").css("background-color", "#fff")
   } else if (pixels < 3000) {
-    $("body").css("background-color", "#fff0f0")
+    $("body").css("background-color", "#000")
   } else {
-    $("body").css("background-color", "#cdccc7")
+    $("body").css("background-color", "#ffff")
   }
 
   var windowHeight = $(window).height()

@@ -118,7 +118,7 @@ header .eye-icon {
 section {
   padding: 20px;
   position: relative;
-  margin: 0 auto 200px;
+  margin: 0 auto 00px;
   max-width: 960px;
   height: 100vh;
 }
@@ -147,7 +147,8 @@ section {
 }
 
 .section_1 h2 {
-  font-size: 120px;
+  font-size: 90px;
+
   line-height: 0.9;
 }
 
@@ -156,7 +157,7 @@ section {
 }
 
 .section_1 .copy {
-  right: -200px;
+  right: -30px;
 }
 
 .section_1 .circle {
@@ -194,10 +195,11 @@ section {
 .section_2 {
   display: flex;
   flex-direction: row-reverse;
+  height: 100vh;
 }
 
-.section_2 h3 {
-  font-size: 120px;
+.section_2 h2 {
+  font-size: 90px;
   line-height: 0.9;
   margin-bottom: 30px;
 }
@@ -230,6 +232,7 @@ section {
 .section_2 .copy,
 .section_2 img {
   transition: transform 0.5s ease;
+    color: #fff;
 }
 
 .section_2:hover .copy {
@@ -242,6 +245,7 @@ section {
 
 .lookbook {
   padding: 160px 20px;
+  margin-bottom: 50px;
   background-image: url(image_3.jpg);
   background-position: center;
   background-size: cover;
@@ -268,7 +272,7 @@ section {
 }
 
 .lookbook:hover h3 {
-  color: rgba(255, 255, 255, 0.8);
+ /* color: rgba(255, 255, 255, 0.8);*/
   transform: scale(1.1);
 }
 
@@ -276,8 +280,13 @@ section {
   transform: scale(1.1);
 }
 
+.project{
+  padding-top: 30px;
+}
+
 .section_3 {
   text-align: center;
+  margin-top:50px;
 }
 
 .section_3 h2 {
@@ -319,25 +328,25 @@ section {
 }
 
 footer {
-  background-image: url(footer.svg);
-  background-position: top;
-  background-size: cover;
-  height: 260px;
-  padding: 200px 0;
+
+  padding: 20px 0;
+bottom: 0;
   text-align: center;
+  background-color: #fff;
 }
 
 footer nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 100px 40px 40px;
-  width: 100%;
+/*  padding: 100px 40px 40px;
+*/  width: 100%;
 }
 
 footer nav a {
-  color: white;
+  color: #000;
   font-size: 50px;
   font-weight: 700;
   padding-right: 15px;
@@ -419,17 +428,22 @@ footer nav a {
 
   .menu .pages a,
   .section_1 h2,
-  .section_2 h3,
+  .section_2 h2,
   .lookbook h3,
   .section_3 h2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .section_1 p {
   padding-top: 10px;
 }
 
-  .section_2 {
+  .section_2 .copy{
+    flex-direction: column;
+
+  }
+
+ .section_2 h3 {
     flex-direction: column;
   }
 
