@@ -9,6 +9,27 @@ body {
 
 }
 
+
+/*canvas {
+     display:block;
+
+}*/
+
+#main{
+    /* Necessary to make sure frame width/height
+  isn't set according to the canvas element */
+  position: absolute;
+  overflow: hidden;
+
+   Optional stuff for positioning
+  top:50%;
+  left:50%;
+  width: 75%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
 header {
   align-items: center;
   display: flex;
@@ -198,8 +219,8 @@ section {
   height: 100vh;
 }
 
-.section_2 h2 {
-  font-size: 90px;
+.section_2 h3 {
+  font-size: 60px;
   line-height: 0.9;
   margin-bottom: 30px;
 }
@@ -244,21 +265,19 @@ section {
 }
 
 .lookbook {
-  padding: 160px 20px;
-  margin-bottom: 50px;
   background-image: url(image_3.jpg);
   background-position: center;
   background-size: cover;
-  text-align: center;
-  max-width: 100%;
+  text-align: left;
+    max-width: 960px;
+
 }
 
 .lookbook h3 {
-  font-size: 120px;
+  font-size: 60px;
   line-height: 0.9;
-  margin: 0 auto;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
 }
 
 .lookbook img {
@@ -280,8 +299,35 @@ section {
   transform: scale(1.1);
 }
 
-.project{
+.hover-title h4{
+  font-size: 25px;
+  font-weight: 600;
+}
+.info{
+  display: flex;
+  padding-top: 10px;
+}
+
+.description p{
+  font-size: 17px;
+}
+.date p{
+  font-size: 17px;
+}
+
+.tech p{
+  font-size: 17px;
+}
+
+
+
+
+.projects-container{
   padding-top: 30px;
+}
+
+.project{
+  padding-top: 50px;
 }
 
 .section_3 {
@@ -297,10 +343,14 @@ section {
 .section_3 .copy {
   left: 50%;
   transform: translate(-50%, -50%);
+  top: 0;
+  background-color: red;
+    transition: all 0.5s ease;
+
 }
 
 .section_3 h2 {
-  transform: translateY(300px);
+  transform: translateY(100px);
 }
 
 .section_3 .circle {
@@ -314,8 +364,15 @@ section {
 }
 
 .section_3 h2,
-.section_3 img {
+ {
   transition: all 0.5s ease;
+  color:#fff;
+}
+
+.bg {
+  width: 100%;
+  background-image: ;
+
 }
 
 .section_3:hover h2 {
@@ -436,6 +493,10 @@ footer nav a {
 
   .section_1 p {
   padding-top: 10px;
+}
+
+.section_1 .copy {
+    top: -40px;
 }
 
   .section_2 .copy{

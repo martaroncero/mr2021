@@ -12,9 +12,9 @@ $(document).on("scroll", function () {
 
   if (pixels < 600) {
     $("body").css("background-color", "#ffffff")
-  } else if (pixels < 1400) {
+  } else if (pixels < 1000) {
     $("body").css("background-color", "#000")
-  } else if (pixels < 2200) {
+  } else if (pixels < 2000) {
     $("body").css("background-color", "#fff")
   } else if (pixels < 3000) {
     $("body").css("background-color", "#000")
