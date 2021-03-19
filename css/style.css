@@ -113,7 +113,7 @@ header .eye-icon {
 }
 
 .menu .social {
-  bottom: 30px;
+  bottom: 10%;
   position: absolute;
   left: 45px;
   display: flex;
